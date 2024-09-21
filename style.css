@@ -1,0 +1,107 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	display: block;
+}
+
+:root {
+	--primary-color: #4c5fd5;
+	--black: #000000;
+	--secondary-color: #dadbf1;
+	--white: #fff;
+}
+
+.header {
+	background-color: var(--black);
+	position: relative;
+	left: 0;
+	z-index: 3;
+	font-size: 17px;
+	height: 88px;
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 8vh;
+	font-size: 24px;
+	font-weight: 700;
+	align-items: center;
+}
+
+[role='button'] {
+	padding: 6px 22px;
+	line-height: 1.5;
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: 400;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 1px solid transparent;
+}
+.btn-submit {
+	background-color: var(--black);
+	color: white;
+}
+
+.btn-signin {
+	background-color: var(--primary-color);
+	margin-left: 1rem;
+	border-radius: 6px;
+	border-width: 1px;
+	border-color: var(--primary-color);
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.search-section {
+	background-color: var(--secondary-color);
+	padding-top: 80px;
+	padding-bottom: 115px;
+}
+
+.container-inner {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-unit-content {
+	margin: 0 auto;
+	max-width: 720px;
+}
+
+label[for='site-search'] {
+	font-size: 80px;
+	letter-spacing: -4px;
+	font-weight: 400;
+	margin: 0 0 1rem;
+}
+#site-search {
+	width: 100%;
+	height: auto;
+	padding: 1rem 1rem;
+	font-weight: 400;
+	border-radius: 8px !important;
+	border-color: var(--black);
+	line-height: 32px;
+
+	background-image: url(./assets/right-arrow-alt-regular-24.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
